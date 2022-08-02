@@ -9,7 +9,7 @@ Ancak “ssh username@ip_address” komutunu kullandığımda “Permission Deni
     -   “sudo nano /etc/ssh/sshd_conf” dosyasına giderek “#PasswordAuthenticattion yes” ve “#ChallengeResponseAuthentication no” kısımlarındaki yorum satırlarını kaldırarak güncelledim. Ardından ssh ile bağlantımı gerçekleştirip şu adımları izledim.
     
 Öncelikle zabbix’in kullanacağı database olarak PostGreSQL kurmayı denedim bunun için sırasıyla yazdığım komutlar şunlardır:
-    -	wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add –
+    -	wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add 
     -   echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" | sudo tee /etc/apt/sources.list.d/pgdg.list
     -	sudo apt update
     -	sudo apt install postgresql-13 postgresql-client-13 -y
