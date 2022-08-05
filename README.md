@@ -74,7 +74,7 @@ Sonrasında gerekli dosyaları oluşturduğumuz database’ e kopyalaması için
 
 Zabbix’in database’e erişebilmesi için **“/etc/zabbix/zabbix_server.conf”** adresine giderek **“DBPassword”** kısmına yukarıda vermiş olduğumuz şifreyi veriyoruz ve yorum satırını kaldırıyoruz. Sonrasında nginx ayarları için **“/etc/zabbix/nginx.conf”** adresine gidiyorum, 2 ve 3 de bulunan yorum satırlarını silmemiz gerekiyor. 4. Yorum satırındaki “example.com” yerine **“ ∿^(.+)$; “** bu satırı ekliyoruz. Sonrasında zabbix ve nginx serverlarımızı restartlıyoruz ;
 
--systemctl restart zabbix-server zabbix-agent nginx php7.4-fpm
+>-systemctl restart zabbix-server zabbix-agent nginx php7.4-fpm
 
 >-systemctl enable zabbix-server zabbix-agent nginx php7.4-fpm
 >
